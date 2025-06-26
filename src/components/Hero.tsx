@@ -74,17 +74,17 @@ export default function Hero({ cabinSketch }: { cabinSketch: any }) {
           transition={{ duration: 0.7, delay: 0.6 }}
         >
           <Image
-            src="/placeholder.svg?height=400&width=600"
-            alt="App Preview"
+            src="/image/Hero_Image.png"
+            alt="Hero Image"
             width={600}
             height={400}
-            className="w-full h-auto rounded-2xl shadow-2xl border border-slate-200"
+            className="w-full max-w-full h-auto object-contain"
             priority
           />
 
           {/* Pulsing SVGs */}
           <svg
-            className="absolute -top-4 -left-4 opacity-80 animate-pulse delay-700"
+            className="absolute top-1 -left-1/4 w-[150px] sm:w-[200px] md:w-[265px] h-auto  opacity-80 animate-pulse delay-700"
             width="265"
             height="259"
             viewBox="0 0 265 259"
@@ -111,7 +111,7 @@ export default function Hero({ cabinSketch }: { cabinSketch: any }) {
           </svg>
 
           <svg
-            className="absolute -top-3.5 -right-8 animate-pulse delay-300"
+            className="absolute -top-10 -right-1/5 w-[120px] sm:w-[180px] md:w-[206px] h-auto animate-pulse delay-300"
             width="206"
             height="206"
             viewBox="0 0 206 206"

@@ -16,6 +16,11 @@ const cabin = Cabin({
 export const metadata: Metadata = {
   title: SITE_NAME,
   description: SITE_DESCRIPTION,
+  icons: {
+    icon: "/warble_mini_icon.svg", // default favicon
+    shortcut: "/warble_mini_icon.svg", // for legacy support
+    apple: "/warble_mini_icon.svg", // Apple devices
+  },
   keywords: [
     "waitlist",
     "join the waitlist",
