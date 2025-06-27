@@ -10,7 +10,7 @@ export function WARBLELIVE_SVG() {
           viewBox="0 0 242 60"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="animate-pulse hover:animate-none transition-transform duration-700 ease-in-out hover:scale-105"
+          className="w-full max-w-[180px] sm:max-w-[220px] md:max-w-[242px] h-auto animate-pulse hover:animate-none transition-transform duration-700 ease-in-out hover:scale-105"
           {...props}
           {...props}
         >

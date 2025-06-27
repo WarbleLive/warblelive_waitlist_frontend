@@ -68,7 +68,7 @@ export default function Hero({ cabinSketch }: { cabinSketch: any }) {
 
         <motion.div
           className="mt-16 md:mt-24 relative mx-auto max-w-4xl select-none"
-          initial={{ opacity: 0, scale: 0.95 }}
+          // initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.7, delay: 0.6 }}
