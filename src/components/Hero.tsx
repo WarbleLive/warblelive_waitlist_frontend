@@ -66,21 +66,22 @@ export default function Hero({ cabinSketch }: { cabinSketch: any }) {
           </Link>
         </motion.div>
 
-        <motion.div
-          className="mt-16 md:mt-24 relative mx-auto max-w-4xl select-none"
-          // initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.7, delay: 0.6 }}
-        >
-          <Image
-            src="/image/Hero_Image.png"
-            alt="Hero Image"
-            width={600}
-            height={400}
-            className="w-full max-w-full h-auto object-contain"
-            priority
-          />
+        <div className="mt-16 md:mt-24 relative mx-auto max-w-4xl select-none">
+          <motion.div
+            initial={{ opacity: 0.75, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+          >
+            <Image
+              src="/image/Hero_Image.svg"
+              alt="Hero Image"
+              width={600}
+              height={400}
+              className="w-full max-w-full h-auto object-contain"
+              priority
+            />
+          </motion.div>
 
           {/* Pulsing SVGs */}
           <svg
@@ -126,7 +127,7 @@ export default function Hero({ cabinSketch }: { cabinSketch: any }) {
               fillOpacity="0.05"
             />
           </svg>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

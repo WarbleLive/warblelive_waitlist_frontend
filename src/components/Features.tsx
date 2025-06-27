@@ -78,7 +78,7 @@ export default function Features({ cabinSketch }: { cabinSketch: any }) {
                 <div className="flex items-center gap-4">
                   <ListIcon />
                   <h4
-                    className={`text-[20px] select-none text-center sm:text-[24px] md:text-[26px] lg:text-[28px] font-semibold text-[#CE4DED] ${cabinSketch.className}`}
+                    className={`text-[20px] select-none sm:text-[24px] md:text-[26px] lg:text-[28px] font-semibold text-[#CE4DED] ${cabinSketch.className}`}
                   >
                     {item.title}
                   </h4>
