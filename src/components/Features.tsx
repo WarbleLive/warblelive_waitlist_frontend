@@ -5,10 +5,11 @@ import Link from "next/link";
 import { JOIN_WAIT_LIST_URL } from "@/lib/site";
 import { featureItems } from "@/lib";
 import { motion } from "framer-motion";
+import { ListIcon } from "./icons/listIcon";
 
 export default function Features({ cabinSketch }: { cabinSketch: any }) {
   return (
-    <section className="px-4 py-16 md:py-24">
+    <section className="px-4 pt-6 pb-16 md:py-24">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start md:items-center max-w-7xl mx-auto px-4 md:px-8">
           {/* Left Side */}
@@ -74,11 +75,14 @@ export default function Features({ cabinSketch }: { cabinSketch: any }) {
                 transition={{ duration: 0.5, delay: 0.2 + i * 0.2 }}
                 className="space-y-6"
               >
-                <h4
-                  className={`text-[20px] select-none text-center sm:text-[24px] md:text-[26px] lg:text-[28px] font-semibold text-[#CE4DED] ${cabinSketch.className}`}
-                >
-                  {item.title}
-                </h4>
+                <div className="flex items-center gap-4">
+                  <ListIcon />
+                  <h4
+                    className={`text-[20px] select-none text-center sm:text-[24px] md:text-[26px] lg:text-[28px] font-semibold text-[#CE4DED] ${cabinSketch.className}`}
+                  >
+                    {item.title}
+                  </h4>
+                </div>
                 <p className="select-none">{item.description}</p>
               </motion.div>
             ))}
