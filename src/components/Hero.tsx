@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function Hero({ cabinSketch }: { cabinSketch: any }) {
   return (
-    <section className="relative px-4 py-16 md:py-24 lg:py-32 overflow-hidden">
+    <section className="relative px-4 pt-16 pb-6 md:py-24 lg:py-32 overflow-hidden">
       {/* Background Circle */}
       <div className="absolute inset-0 pointer-events-none">
         <svg
